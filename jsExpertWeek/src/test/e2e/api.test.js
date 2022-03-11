@@ -16,7 +16,7 @@ describe('API E2E Test Suite', () => {
         .post('/')
         .send({
             name: 'Jhonny Baltros',
-            age: 27
+            age: 32
         });
         const expectedResponse = JSON.stringify({ ok: 1 })
         expect(response.text).toStrictEqual(expectedResponse);
